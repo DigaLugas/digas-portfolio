@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #121212;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header, main, footer {
+  padding: 5px;
+}
+
+button {
+  background-color: #1DB954;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: #1ed760;
+}
