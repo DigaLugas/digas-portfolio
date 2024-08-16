@@ -1,9 +1,14 @@
 <nav>
   <a routerLink="/" class="logo">Portfólio</a>
-  <div class="nav-links">
-      <a routerLink="/" fragment="thumb">Home</a>
-      <a routerLink="/" fragment="sobre">Sobre</a>
-      <a routerLink="/" fragment="project">Projetos</a>
-      <a routerLink="/" fragment="contact">Contato</a>
+  <div class="hamburger" (click)="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="nav-links" [class.active]="menuActive">
+    <a routerLink="/" fragment="thumb" (click)="closeMenu()">Home</a>
+    <a routerLink="/" fragment="sobre" (click)="closeMenu()">Sobre</a>
+    <a routerLink="/" fragment="projetos" (click)="closeMenu()">Projetos</a>
+    <a routerLink="/" fragment="contato" (click)="closeMenu()">Contato</a>
   </div>
 </nav>

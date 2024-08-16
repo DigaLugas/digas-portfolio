@@ -1,0 +1,72 @@
+.contact-section {
+  height: 100vh; /* Ocupa 100% da altura da viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);  
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: #1DB954; /* Cor verde do Spotify */
+  margin-bottom: 30px;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ccc; /* Cor de texto sutil */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #282828; /* Fundo um pouco mais claro para os campos */
+  color: #fff;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  background-color: #333; /* Fundo ao focar */
+}
+
+button {
+  background-color: #1DB954;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px; /* Botões arredondados para um toque moderno */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.1em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #1ed760;
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+button:active {
+  transform: scale(0.95); /* Leve redução ao clicar */
+}

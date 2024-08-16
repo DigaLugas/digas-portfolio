@@ -7,6 +7,8 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 header, main, footer {
@@ -24,4 +26,21 @@ button {
 
 button:hover {
   background-color: #1ed760;
+}
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1c1c; /* Fundo da barra de rolagem (trilho) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #282828; /* Cor da "thumb" da barra de rolagem */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 3px solid #1c1c1c; /* Espaço entre a thumb e o trilho, criando um efeito de "acolchoamento" */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333; /* Cor da thumb ao passar o mouse */
 }

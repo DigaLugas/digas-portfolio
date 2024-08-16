@@ -1,13 +1,17 @@
+
 nav {
   background-color: #181818;
-  padding: 10px 20px;
+  padding: 10px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed; /* Muda a posição para fixa */
-  top: 0; /* Posiciona no topo */
-  width: 100%; /* Ocupa 100% da largura da tela */
-  z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+  position: fixed;
+  top: 0;
+  width: calc(100% - 80px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav::after {
@@ -28,7 +32,7 @@ nav:hover::after {
 
 nav a {
   color: #FFFFFF;
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
   position: relative;
 }
@@ -54,4 +58,55 @@ nav a:hover::after {
 .logo {
   font-weight: bold;
   font-size: 1.5em;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+
+nav.active .nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #181818;
+  padding: 20px;
+}
+
+nav.active .nav-links a {
+  margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+
+  nav {
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+  }
 }
