@@ -10,25 +10,25 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 export class ProjetosComponent {
   projects = [
     {
-      title: 'Projeto 1',
-      description: 'Descrição breve do projeto 1.',
-      details: 'Detalhes completos do projeto 1.',
-      image: 'assets/projeto1.jpg',
-      link: 'https://example.com/project1'
+      title: 'Email Service com AmazonSES',
+      description: 'Um serviço para facilitar o envio de emails utilizando o Amazon SES.',
+      details: 'Este projeto é um aplicativo Spring Boot que fornece um serviço de envio de e-mail usando Amazon SES (Simple Email Service). Ele aproveita o poder da injeção de dependência do Spring e do SDK do Amazon SES para enviar e-mails com eficiência e segurança.',
+      image: 'assets/ProjetoAWS.png',
+      link: 'https://github.com/DigaLugas/SpringEmailSender/tree/main'
     },
     {
-      title: 'Projeto 2',
-      description: 'Descrição breve do projeto 2.',
-      details: 'Detalhes completos do projeto 2.',
-      image: 'assets/projeto2.jpg',
-      link: 'https://example.com/project2'
+      title: 'Galaxy Sandbox',
+      description: 'Um sandbox que te permite criar seu própio universo',
+      details: 'Feito em Js, é um simulador de galáxia que usa p5.js e muitos conceitos abordados em sala de aula, creio que esse foi um dos meus melhores trabalhos academicos',
+      image: 'assets/SolarSystem.jpeg',
+      link: 'https://editor.p5js.org/lucasgustavorodrigues10/full/FBfMrbwtg'
     },
     {
-      title: 'Projeto 3',
-      description: 'Descrição breve do projeto 3.',
-      details: 'Detalhes completos do projeto 3.',
-      image: 'assets/projeto3.jpg',
-      link: 'https://example.com/project3'
+      title: 'CRUD com Spring',
+      description: 'Desenvolvimento de um CRUD simples com SPrimg',
+      details: 'Um crud usando Spring Boot, MySQL, Maven, Flyway e outras depêndencias do Spring.',
+      image: 'assets/CRUD.jpeg',
+      link: 'https://github.com/DigaLugas/APIEstoqueForte'
     }
   ];
 
@@ -42,6 +42,6 @@ export class ProjetosComponent {
   }
 
   onCloseModal(): void {
-    this.isModalVisible = false; 
+    this.isModalVisible = false;
   }
 }
